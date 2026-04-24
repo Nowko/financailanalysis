@@ -1,0 +1,36 @@
+    def _build_expense_tab(self, frame):
+        frame.columnconfigure(1, weight=1)
+        for index, (key, label) in enumerate(CATEGORY_LABELS.items()):
+            self._add_numeric_entry(frame, index, f"{label}(ÎßåÏõê)", self.category_inputs, key)
+
+    def _build_expense_tab(self, frame):
+        frame.columnconfigure(1, weight=1)
+        for index, (key, label) in enumerate(CATEGORY_LABELS.items()):
+            self._add_numeric_entry(
+                frame,
+                index,
+                f"{label}(ÎßåÏõê)",
+                self.category_inputs,
+                key,
+                on_blur=self._refresh_expense_summary,
+            )
+        summary_row = len(CATEGORY_LABELS)
+        self._add_display_row(frame, summary_row, "?åÎπÑ ?©Í≥Ñ", "expense_total", target_dict=self.expense_output_vars)
+        self._add_display_row(frame, summary_row + 1, "?îÍ∞Ñ Í∞Ä?©ÏûêÍ∏?, "available_cash", target_dict=self.expense_output_vars)
+        self._refresh_expense_summary()
+
+    def _refresh_expense_summary(self):
+        if not self.expense_output_vars:
+            return
+
+        expense_total = 0.0
+        for widget in self.category_inputs.values():
+            expense_total += self._entry_float(widget, 0.0)
+
+        household_income = self._entry_float(self.inputs.get("household_income"), 0.0) if self.inputs.get("household_income") else 0.0
+        available_cash = household_income - expense_total
+
+        self.expense_output_vars["expense_total"].set(self._format_money_label(expense_total))
+        self.expense_output_vars["available_cash"].set(self._format_money_label(available_cash))
+
+
