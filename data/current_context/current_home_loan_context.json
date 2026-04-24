@@ -1,0 +1,65 @@
+{
+  "context_name": "korea_home_loan_example_context",
+  "as_of_date": "2026-04-23",
+  "notes": [
+    "대출이자율은 한국은행의 최신 금융기관 가중평균금리를 참고한 예시값입니다.",
+    "LTV, DTI, 대출기간은 차주 조건과 지역, 규제에 따라 달라 현재 단일 공시값으로 확정하기 어려워 내부 보수 예시 정책값을 사용합니다."
+  ],
+  "parameters": {
+    "ltv": {
+      "label": "예시 LTV",
+      "value": 0.7,
+      "unit": "ratio",
+      "as_of_date": "2026-04-23",
+      "published_at": "2026-04-23",
+      "source_name": "내부 주택대출 예시 정책값",
+      "official_url": "https://www.moef.go.kr/sisa/dictionary/detail?idx=2325",
+      "method": "planning_example_policy",
+      "note": "실제 한도는 차주와 주택 소재지, 규제 상태에 따라 달라질 수 있어 보수적인 상담 예시값으로 사용합니다."
+    },
+    "dti": {
+      "label": "예시 DTI",
+      "value": 0.4,
+      "unit": "ratio",
+      "as_of_date": "2026-04-23",
+      "published_at": "2026-04-23",
+      "source_name": "내부 주택대출 예시 정책값",
+      "official_url": "https://www.moef.go.kr/sisa/dictionary/detail?idx=2480",
+      "method": "planning_example_policy",
+      "note": "실제 적용 비율은 상품과 차주 조건에 따라 달라질 수 있어 상담용 보수 예시값으로 사용합니다."
+    },
+    "loan_term_years": {
+      "label": "예시 대출기간",
+      "value": 30,
+      "unit": "years",
+      "as_of_date": "2026-04-23",
+      "published_at": "2026-04-23",
+      "source_name": "내부 주택대출 예시 정책값",
+      "official_url": "",
+      "method": "planning_example_policy",
+      "note": "원리금 분할상환을 가정한 장기 주택대출 상담용 예시기간입니다."
+    },
+    "loan_interest_rate": {
+      "label": "예시 대출이자율",
+      "value": 0.0426,
+      "unit": "rate",
+      "as_of_date": "2026-02-28",
+      "published_at": "2026-03-27",
+      "source_name": "한국은행 2026년 2월 금융기관 가중평균금리",
+      "official_url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?menuNo=201264&nttId=10097135",
+      "method": "latest_published_weighted_average_loan_rate",
+      "note": "예금은행 신규취급액 기준 총대출금리이며, 주택담보대출 전용금리는 아니므로 현재 대출금리 흐름을 반영한 예시값으로 사용합니다."
+    },
+    "target_years": {
+      "label": "예시 목표기간",
+      "value": 10,
+      "unit": "years",
+      "as_of_date": "2026-04-23",
+      "published_at": "2026-04-23",
+      "source_name": "내부 재무설계 예시 정책값",
+      "official_url": "",
+      "method": "planning_example_policy",
+      "note": "주택 구입을 위한 자기자금 마련 기간의 기본 예시값입니다."
+    }
+  }
+}

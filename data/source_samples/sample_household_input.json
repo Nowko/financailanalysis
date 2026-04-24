@@ -1,0 +1,15 @@
+{
+  "household_size": 4,
+  "reference_age": 44,
+  "monthly_income": 680,
+  "disposable_income": 540,
+  "total_assets": 82000,
+  "financial_assets": 19000,
+  "real_estate_assets": 56000,
+  "total_debt": 11000,
+  "monthly_consumption": 385,
+  "pension_monthly_contribution": 60,
+  "pension_current_age": 44,
+  "pension_retirement_age": 60,
+  "pension_target_monthly_amount": 220
+}

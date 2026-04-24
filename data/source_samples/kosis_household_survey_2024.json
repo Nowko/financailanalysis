@@ -1,0 +1,51 @@
+{
+  "dataset_key": "kosis_household_finance_welfare",
+  "period_year": 2024,
+  "unit": "만원",
+  "rows": [
+    {
+      "household_size": 2,
+      "age_band": "30s",
+      "monthly_income": 430,
+      "disposable_income": 360,
+      "total_assets": 34500,
+      "financial_assets": 9200,
+      "real_estate_assets": 22000,
+      "total_debt": 5300,
+      "monthly_consumption": 255
+    },
+    {
+      "household_size": 3,
+      "age_band": "40s",
+      "monthly_income": 610,
+      "disposable_income": 500,
+      "total_assets": 61200,
+      "financial_assets": 15000,
+      "real_estate_assets": 42000,
+      "total_debt": 9800,
+      "monthly_consumption": 340
+    },
+    {
+      "household_size": 4,
+      "age_band": "40s",
+      "monthly_income": 720,
+      "disposable_income": 585,
+      "total_assets": 78000,
+      "financial_assets": 18200,
+      "real_estate_assets": 54800,
+      "total_debt": 12800,
+      "monthly_consumption": 402
+    },
+    {
+      "household_size": 4,
+      "age_band": "50s",
+      "monthly_income": 690,
+      "disposable_income": 560,
+      "total_assets": 90500,
+      "financial_assets": 24500,
+      "real_estate_assets": 61200,
+      "total_debt": 9900,
+      "monthly_consumption": 390
+    }
+  ]
+}

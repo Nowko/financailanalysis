@@ -1,0 +1,27 @@
+{
+  "dataset_key": "median_income_manual",
+  "period_year": 2026,
+  "unit": "만원",
+  "rows": [
+    {
+      "household_size": 1,
+      "median_income_by_household_size": 261
+    },
+    {
+      "household_size": 2,
+      "median_income_by_household_size": 432
+    },
+    {
+      "household_size": 3,
+      "median_income_by_household_size": 553
+    },
+    {
+      "household_size": 4,
+      "median_income_by_household_size": 670
+    },
+    {
+      "household_size": 5,
+      "median_income_by_household_size": 783
+    }
+  ]
+}

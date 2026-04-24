@@ -1,0 +1,24 @@
+{
+  "dataset_key": "document_wealth_report",
+  "period_year": 2024,
+  "rows": [
+    {
+      "metric_name": "wealth_report_financial_assets_reference",
+      "value": 150000,
+      "unit": "만원",
+      "time_grain": "point_in_time",
+      "statistic": "reference",
+      "age_band": "40s",
+      "segment": "affluent_household"
+    },
+    {
+      "metric_name": "wealth_report_total_assets_reference",
+      "value": 280000,
+      "unit": "만원",
+      "time_grain": "point_in_time",
+      "statistic": "reference",
+      "age_band": "40s",
+      "segment": "affluent_household"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "source_name": "kosis_household_finance_welfare_2024",
+      "source_type": "api",
+      "refresh_cycle": "monthly",
+      "official_url": "https://kosis.kr/openapi",
+      "collector_key": "kosis",
+      "normalizer_key": "kosis_household",
+      "enabled": true,
+      "version": "2026.04",
+      "benchmark_role": "household_peer_stats",
+      "description": "KOSIS household finance and welfare survey mock/adapter source.",
+      "config": {
+        "mode": "mock",
+        "period_year": 2024,
+        "dataset_key": "kosis_household_finance_welfare",
+        "mock_response_path": "data/source_samples/kosis_household_survey_2024.json",
+        "api_url": "",
+        "params": {},
+        "api_key_param_name": ""
+      }
+    },
+    {
+      "source_name": "median_income_manual_2026",
+      "source_type": "manual",
+      "refresh_cycle": "yearly",
+      "official_url": "https://www.mohw.go.kr/",
+      "collector_key": "manual",
+      "normalizer_key": "median_income",
+      "enabled": true,
+      "version": "2026.01",
+      "benchmark_role": "median_income",
+      "description": "Official median income table managed via manual file input.",
+      "config": {
+        "period_year": 2026,
+        "dataset_key": "median_income_manual",
+        "file_path": "data/source_samples/manual_median_income_2026.json"
+      }
+    },
+    {
+      "source_name": "document_wealth_report_sample_2024",
+      "source_type": "document",
+      "refresh_cycle": "yearly",
+      "official_url": "https://www.kbstar.com/",
+      "collector_key": "document",
+      "normalizer_key": "document_table",
+      "enabled": true,
+      "version": "2026.01",
+      "benchmark_role": "document_auxiliary",
+      "description": "Document-extracted auxiliary source sample for later expansion.",
+      "config": {
+        "period_year": 2024,
+        "dataset_key": "document_wealth_report",
+        "file_path": "data/source_samples/document_wealth_report_2024.json"
+      }
+    }
+  ]
+}
